@@ -22,6 +22,13 @@ $(".banner-slider").slick( {
   dots: true,
   arrows:false
 });
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 5,
+  dots:true,
+  autoplaySpeed: 2000,
+  slidesToScroll: 3
+});
 $('.vennor-carousel').owlCarousel({
   loop:true,
   margin:10,

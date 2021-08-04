@@ -18,131 +18,290 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="header-brand logo-image">
-                        <figure class="logo">
-                            <a href="index.html">
-                                <img src="/assets/image/logo.png" alt="title">
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-12 col-md-7">
-                    <div class="input-search">
-                        <input type="text" placeholder="Tìm sản phẩm">
-                        <button class="Search"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-2">
-                    <div class="social">
-                        <figure class="socail-item">
-                            <a href="#">
-                                <img src="/assets/image/user.png" alt="title">
-                            </a>
-                        </figure>
-                        <figure class="socail-item">
-                            <a href="#">
-                                <img src="/assets/image/cart.png" alt="title">
-                            </a>
-                        </figure>
-                        <figure class="socail-item">
-                            <a href="#">
-                                <img src="/assets/image/star.png" alt="title">
-                            </a>
-                        </figure>
-                    </div>
+            <div class="header-top">
+                <div class="row">
+                        <div class="header-brand logo-image">
+                            <figure class="logo">
+                                <a href="index.html">
+                                    <img src="/assets/image/logo.png" alt="title">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="input-search">
+                            <input type="text" placeholder="Tìm sản phẩm">
+                            <button class="Search"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="social">
+                            <figure class="socail-item">
+                                <a href="#" class="user">
+                                    <img src="/assets/image/user.png" alt="title">
+                                </a>
+                            </figure>
+                            <div class="notification-main">
+                                <div class="notification_wrap">
+                                    <div class="notification_icon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Xem giỏ hàng">
+                                        <span class="like-icon" >
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                        <span class="badge bg-danger" id="count-news">4</span>
+                                    </div>
+                                    <div class="notification_dropdown">
+                                        <div class="notyfi_item">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                     <figure class="box-img-list-blog">
+                                                         <a href="#"><img src="/assets/image/sp1.jpeg" alt="title"></a>
+                                                     </figure>
+                                                </div>
+                                                <div class="col-8">
+                                                     <div class="box-info-list-blog">
+                                                         <h3 class="list-blog-title">
+                                                             <a href="#">Viên nhai trị đau dạ dày Tums Extra Strength 750mg của Mỹ hộp 100 viên</a>
+                                                         </h3>
+                                                         <div class="info-price">
+                                                             <span class="xl">1x</span>
+                                                             <span class="price">320.000đ</span>
+                                                         </div>
+                                                     </div> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="notyfi_item">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                 <figure class="box-img-list-blog">
+                                                     <a href="#"><img src="/assets/image/sp2.jpeg" alt="title"></a>
+                                                 </figure>
+                                            </div>
+                                            <div class="col-8">
+                                                 <div class="box-info-list-blog">
+                                                     <h3 class="list-blog-title">
+                                                         <a href="#">Kẹo dẻo bổ sung Vitamin C tốt cho hệ miễn dịch của trẻ nhỏ – Nature Made Kids First Vitamin C (180 viên)</a>
+                                                     </h3>
+                                                     <div class="info-price">
+                                                        <span class="xl">1x</span>
+                                                        <span class="price">490.000đ</span>
+                                                    </div>
+                                                 </div> 
+                                            </div>
+                                        </div>
+                                     </div>
+                                        <div class="box-total">
+                                            <p>
+                                                Tổng số: <span class="total-price">710.000đ</span>
+                                            </p>
+                                        </div>
+                                       
+                                        <div class="see-cart">
+                                            <a href="cart.html" class="see-cart-btn">Xem giỏ hàng</a>
+                                        </div>
+                                        <div class="check-btn">
+                                            <a href="checkout.html" class="checkout-btn">Thanh toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <figure class="socail-item">
+                                <a href="#" class="star">
+                                    <img src="/assets/image/star.png" alt="title">
+                                </a>
+                            </figure>
+                        </div>
+                        <nav class="navbar navbar-header navbar-expand-xl navbar-dark">
+                            <div class="container">
+                                <button class="navbar-toggler btn-view" type="button" data-toggle="collapse" data-target="#colNav4" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-awesome fas fa-bars"></span>
+                                </button>
+                                <div class="collapse navbar-collapse hide-view" id="colNav4">
+                                    <div class="input-search">
+                                        <input type="text" placeholder="Tìm sản phẩm">
+                                        <button class="Search"><i class="fas fa-search"></i></button>
+                                    </div>
+                                    <ul id="accordion" class="accordion">
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="index.html"><span>Trang chủ</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="intro.html"><span>Giới thiệu</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="new.html"><span>Thực Phẩm Bổ sung</span></a><i class="fa fa-chevron-down"></i>
+                                            </div>        
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Vitamin dành cho người lớn</a></li>  
+                                                <li><a href="#">Thảo dược bổ sung</a></li>  
+                                                <li><a href="#">Dầu cá & Omega-3</a></li>  
+                                                <li><a href="#">Colagen và sữa ong chúa</a></li>  
+                                                <li><a href="#">Glucosamine & Xương Khớp Bổ Sung</a></li>  
+                                                <li><a href="#">Canxi & Khoáng Chất</a></li>  
+                                                <li><a href="#">Phụ Nữ Có Thai và Sau Sinh</a></li>  
+                                                <li><a href="#">Vitamin Cho Tóc và Móng</a></li>  
+                                                <li><a href="#">Hỗ Trợ Chế Độ Ăn Uống & Sinh Hoạt</a></li>  
+                                                <li><a href="#">Nước Tăng Lực</a></li>  
+                                                <li><a href="#">Hỗ Trợ Tiêu Hoá</a></li>  
+                                                <li><a href="#">Vitamin Cho Bé Yêu</a></li>  
+                                                <li><a href="#">Hỗ Trợ Miễn Dịch</a></li>  
+                                                <li><a href="#">Hỗ Trợ Tim Mạch & Huyết Áp</a></li>  
+                                                <li><a href="#">Hỗ Trợ Giảm Cân</a></li>    
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="event.html"><span>Chăm sóc cá nhân</span></a><i class="fa fa-chevron-down"></i>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li><a href="test.html">Bột Giặt – Nước Xả</a></li>
+                                                <li><a href="#">Chăm Sóc Răng Miệng</a></li>
+                                                <li><a href="#">Dầu Gội- Sữa Tắm</a></li>
+                                                <li><a href="#">Kem dưỡng ẩm</a></li>
+                                                <li><a href="#">Tinh Dầu Thơm</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="#"><span>Dinh Dưỡng</span></a><i class="fa fa-chevron-down"></i>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Bánh – Kẹo – Mứt</a></li>
+                                                
+                                                <li><a href="#">Hạt Ngũ Cốc</a></li>
+                                                <li><a href="#">Mật Ong</a></li>
+                                                <li><a href="#">Sữa Ngoại</a></li>                                    
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="#"><span>Hot deals</span></a><i class="fa fa-chevron-down"></i>
+                                            </div>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Hàng Mới Về</a></li>
+                                                
+                                                <li><a href="#">Khuyến Mại</a></li>                             
+                                            </ul>
+                                        </li>
+                                    
+                                        <li class="dropdown">
+                                            <div class="link">
+                                                <a href="news.html"><span>TIN tức</span></a>
+                                            </div> 
+                                        </li>
+                                        
+                                    </ul>
+            
+                                   
+            
+                                </div>
+
+                            </div>
+                            
+                        </nav>
+                       
                 </div>
             </div>
-            <nav class="navbar navbar-header navbar-expand-xl navbar-dark">
-               <div class="container">
-                    <button class="navbar-toggler btn-view" type="button" data-toggle="collapse" data-target="#colNav4" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-awesome fas fa-bars" style="display: block !important;"></span>
-                    </button>
-                    <div class="collapse navbar-collapse hide-view" id="colNav4">
-                        <ul id="accordion" class="accordion">
-                            <li class="dropdown">
-                                <a href="index.html">Trang chủ</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="intro.html">Giới Thiệu</a>
-                            </li>
-                            <li class="dropdown">
-                                <div class="link">
-                                    <a href="new.html"><span>Thực Phẩm Bổ sung</span></a><i class="fa fa-chevron-down"></i>
-                                </div>        
-                                <ul class="sub-menu">
-                                    <li><a href="#">Vitamin dành cho người lớn</a></li>  
-                                    <li><a href="#">Thảo dược bổ sung</a></li>  
-                                    <li><a href="#">Dầu cá & Omega-3</a></li>  
-                                    <li><a href="#">Colagen và sữa ong chúa</a></li>  
-                                    <li><a href="#">Glucosamine & Xương Khớp Bổ Sung</a></li>  
-                                    <li><a href="#">Canxi & Khoáng Chất</a></li>  
-                                    <li><a href="#">Phụ Nữ Có Thai và Sau Sinh</a></li>  
-                                    <li><a href="#">Vitamin Cho Tóc và Móng</a></li>  
-                                    <li><a href="#">Hỗ Trợ Chế Độ Ăn Uống & Sinh Hoạt</a></li>  
-                                    <li><a href="#">Nước Tăng Lực</a></li>  
-                                    <li><a href="#">Hỗ Trợ Tiêu Hoá</a></li>  
-                                    <li><a href="#">Vitamin Cho Bé Yêu</a></li>  
-                                    <li><a href="#">Hỗ Trợ Miễn Dịch</a></li>  
-                                    <li><a href="#">Hỗ Trợ Tim Mạch & Huyết Áp</a></li>  
-                                    <li><a href="#">Hỗ Trợ Giảm Cân</a></li>    
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div class="link">
-                                    <a href="event.html"><span>Chắm sóc cá nhân</span></a><i class="fa fa-chevron-down"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Bột Giặt – Nước Xả</a></li>
-                                    <li><a href="#">Chăm Sóc Răng Miệng</a></li>
-                                    <li><a href="#">Dầu Gội- Sữa Tắm</a></li>
-                                    <li><a href="#">Kem dưỡng ẩm</a></li>
-                                    <li><a href="#">Tinh Dầu Thơm</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div class="link">
-                                    <a href="#"><span>Dinh Dưỡng</span></a><i class="fa fa-chevron-down"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Bánh – Kẹo – Mứt</a></li>
-                                    
-                                    <li><a href="#">Hạt Ngũ Cốc</a></li>
-                                    <li><a href="#">Mật Ong</a></li>
-                                    <li><a href="#">Sữa Ngoại</a></li>                                    
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div class="link">
-                                    <a href="#"><span>Hot deals</span></a><i class="fa fa-chevron-down"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Hàng Mới Về</a></li>
-                                    
-                                    <li><a href="#">Khuyến Mại</a></li>                             
-                                </ul>
-                            </li>
+            <div class="header-main">
+                <nav class="navbar navbar-header navbar-expand-xl navbar-dark">
+                    <div class="container">
+                        
+                        <div class="collapse navbar-collapse hide-view" id="colNav4">
+                            <div class="input-search">
+                                <input type="text" placeholder="Tìm sản phẩm">
+                                <button class="Search"><i class="fas fa-search"></i></button>
+                            </div>
+                            <ul id="accordion" class="accordion">
+                                <li class="dropdown">
+                                    <a href="index.html"><span>Trang chủ</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="intro.html"><span>Giới thiệu</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <div class="link">
+                                        <a href="new.html"><span>Thực Phẩm Bổ sung</span></a><i class="fa fa-chevron-down"></i>
+                                    </div>        
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Vitamin dành cho người lớn</a></li>  
+                                        <li><a href="#">Thảo dược bổ sung</a></li>  
+                                        <li><a href="#">Dầu cá & Omega-3</a></li>  
+                                        <li><a href="#">Colagen và sữa ong chúa</a></li>  
+                                        <li><a href="#">Glucosamine & Xương Khớp Bổ Sung</a></li>  
+                                        <li><a href="#">Canxi & Khoáng Chất</a></li>  
+                                        <li><a href="#">Phụ Nữ Có Thai và Sau Sinh</a></li>  
+                                        <li><a href="#">Vitamin Cho Tóc và Móng</a></li>  
+                                        <li><a href="#">Hỗ Trợ Chế Độ Ăn Uống & Sinh Hoạt</a></li>  
+                                        <li><a href="#">Nước Tăng Lực</a></li>  
+                                        <li><a href="#">Hỗ Trợ Tiêu Hoá</a></li>  
+                                        <li><a href="#">Vitamin Cho Bé Yêu</a></li>  
+                                        <li><a href="#">Hỗ Trợ Miễn Dịch</a></li>  
+                                        <li><a href="#">Hỗ Trợ Tim Mạch & Huyết Áp</a></li>  
+                                        <li><a href="#">Hỗ Trợ Giảm Cân</a></li>    
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div class="link">
+                                        <a href="event.html"><span>Chăm sóc cá nhân</span></a><i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><a href="test.html">Bột Giặt – Nước Xả</a></li>
+                                        <li><a href="#">Chăm Sóc Răng Miệng</a></li>
+                                        <li><a href="#">Dầu Gội- Sữa Tắm</a></li>
+                                        <li><a href="#">Kem dưỡng ẩm</a></li>
+                                        <li><a href="#">Tinh Dầu Thơm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div class="link">
+                                        <a href="#"><span>Dinh Dưỡng</span></a><i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Bánh – Kẹo – Mứt</a></li>
+                                        
+                                        <li><a href="#">Hạt Ngũ Cốc</a></li>
+                                        <li><a href="#">Mật Ong</a></li>
+                                        <li><a href="#">Sữa Ngoại</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div class="link">
+                                        <a href="#"><span>Hot deals</span></a><i class="fa fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Hàng Mới Về</a></li>
+                                        
+                                        <li><a href="#">Khuyến Mại</a></li>                             
+                                    </ul>
+                                </li>
+                            
+                                <li class="dropdown">
+                                    <div class="link">
+                                        <a href="news.html"><span>TIN tức</span></a>
+                                    </div> 
+                                </li>
+                                
+                            </ul>
+    
                            
-                            <li class="dropdown">
-                                <div class="link">
-                                    <a href="contact.html"><span>TIN tức</span></a><i class="fa fa-chevron-down"></i>
-                                </div> 
-                            </li>
-                        </ul>
+    
+                        </div>
+                        <div class="header-button">
+                            <a href="tel:0972104459" class="btn alert is-shade">
+                                <span>Hotline: 0972104459</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="header-button">
-                        <a href="tel:0972104459" class="btn alert is-shade">
-                            <span>Hotline: 0972104459</span>
-                        </a>
-                    </div>
-               </div>
-                   
                     
-                
-            </nav>
-       </div>
-    </header>
+                </nav>
+               
+               
+            </div>           
+        </div>
+    </header> 
+   
    
     <main>
        <section class="detail-news">
@@ -447,14 +606,14 @@
         <section class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-6 col-lg-8">
                         <div class="box-content">
                             <p>   
                                  Giao diện website: www.khoenhutrau.com | © Khoẻ Như Trâu      
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <div class="box-pay">
                             <div class="payment-icon">
                                 <figure class="box-img">
@@ -494,8 +653,11 @@
                             
                         </div>
                     </div>
-        
                 </div>
+                   
+                    
+        
+                
             </div>
             
         </section>

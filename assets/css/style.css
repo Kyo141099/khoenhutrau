@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  src: url(/assets/font/FontsFree-Net-SFProDisplay-Regular.ttf);
+  font-family: "SF pro", Courier;
+}
+body {
+  font-family: "SF pro", Courier;
+  color: #000;
+  font-size: 18px;
+}
 h1.title {
   font-size: 2rem;
   font-weight: 600;
@@ -164,7 +173,6 @@ h2.title span {
   padding-right: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 14px;
   font-weight: 500;
   color: #111;
   white-space: nowrap;
@@ -172,6 +180,7 @@ h2.title span {
   text-transform: uppercase;
   font-weight: 700;
   height: 15px;
+  font-size: 18px;
 }
 
 .header .navbar a:hover {
@@ -188,12 +197,15 @@ h2.title span {
   height: 100% !important;
   color: #fff !important;
   background: #eec149;
-  padding: 3px 10px !important;
+  padding: 3px 15px !important;
   margin-bottom: 0 !important;
   box-shadow: inset 1px 1px 0 0 rgb(255 255 255 / 10%),
     inset 0 2em 15px 0 rgb(255 255 255 / 20%);
   text-transform: none;
   margin-left: 10px;
+}
+.header .navbar .alert:hover {
+  background: #ca9b18;
 }
 
 .header .navbar .dropdown ul {
@@ -327,6 +339,10 @@ h2.title span {
   font-size: 50%;
   color: #fff;
 }
+.header-top .notification-main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .header-top .notification-main .notyfi_item {
   border-bottom: 1px solid #ebedf0;
   padding-bottom: 15px;
@@ -367,7 +383,7 @@ h2.title span {
   text-align: center;
   color: #eec149;
   border-radius: 50%;
-  line-height: 3rem;
+  line-height: 3.5rem;
   cursor: pointer;
 }
 .header-top .notification_wrap .notification_icon .far.fa-heart {
@@ -380,12 +396,32 @@ h2.title span {
 .header-main .input-search {
   display: none;
 }
+.header-top .navbar {
+  display: none;
+}
 @media screen and (max-width: 1320px) {
+  .header-top .navbar {
+    display: unset !important;
+  }
+  .header-top .logo {
+    max-width: 80px;
+  }
+  .notification_wrap .notification_dropdown.active {
+    right: 35px !important;
+  }
+  .header-top .navbar.fixed-top {
+    position: unset !important;
+  }
+  .header-main {
+    display: none;
+  }
   .header-top .navbar-toggler {
     display: unset !important;
   }
   .header-top .input-search {
-    display: none !important;
+    width: 100%;
+    margin-bottom: 15px;
+    display: none;
   }
   .header-main .input-search {
     display: unset;
@@ -419,15 +455,28 @@ h2.title span {
   .header .navbar .dropdown:first-child {
     position: relative;
     border-right: none;
-    padding-bottom: 15px;
-    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left: 0;
   }
   .header .navbar .dropdown .link {
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .header .navbar .dropdown {
+    padding-right: 0;
+    padding-left: 0;
   }
   .header .navbar .dropdown {
     border-right: none;
+  }
+  .header .navbar {
+    min-height: unset;
+  }
+  .header-top .navbar .input-search {
+    display: block;
+  }
+  .navbar .sub-menu li a {
+    text-transform: none;
   }
 }
 /* banner */
@@ -478,7 +527,49 @@ h2.title span {
   font-size: 14px;
   margin-left: 10px;
 }
+/* .banner .slick-dots {
+  right: 30px;
+  bottom: 20px;
+  width: auto;
+} */
+.banner .slick-dots li button::before {
+  opacity: 1;
+  color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.banner .slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: #eec149;
+  font-size: 16px;
+}
 /* hot-products */
+.hot-products h2.title {
+  margin-top: 50px;
+}
+
+.hot-products .box-content ul {
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: none;
+}
+
+.hot-products .box-content .nav-tabs .nav-item.show .nav-link,
+.hot-products .box-content .nav-tabs .nav-link.active {
+  border-color: unset !important;
+  background: #fff;
+  color: #eec149;
+}
+.hot-products .box-content .nav-tabs .nav-item a {
+  border-radius: 69px !important;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px #eec149 solid;
+  font-weight: 600;
+  background: #000;
+  color: #fff;
+}
 .box-item .name {
   font-size: 15px;
   text-align: center;
@@ -492,6 +583,22 @@ h2.title span {
   font-size: 16px;
   text-align: center;
 }
+/* vennor */
+.vennor {
+  padding-bottom: 15px;
+}
+.vennor .slick-dots li button::before {
+  opacity: 1;
+  color: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.vennor .slick-dots li.slick-active button::before {
+  opacity: 1;
+  color: #eec149;
+  font-size: 16px;
+}
+
 /* img-group */
 .img-group .box-item {
   margin-bottom: 30px;
@@ -592,13 +699,17 @@ h2.title span {
 }
 .footer-bottom .box-pay .payment-icon {
   background: #fff;
-
+  margin-right: 10px;
   padding: 5px;
   border-radius: 5px;
+}
+.footer-bottom .box-pay .payment-icon:last-child {
+  margin-right: 0;
 }
 .footer-bottom .box-pay .payment-icon:hover {
   background: #e8b200;
 }
+
 /* intro-page */
 /* intro */
 
@@ -1185,7 +1296,7 @@ h2.title span {
     border-radius: 0.25rem;
   }
   .navbar-dark .navbar-toggler {
-    color: #004e7f;
+    color: #e8b200;
     border-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -1217,9 +1328,9 @@ h2.title span {
     z-index: 999;
     height: 100vh;
     overflow-y: auto;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #colNav4.show {
     left: 0;
@@ -1244,8 +1355,8 @@ h2.title span {
     margin-top: 10px;
   }
   .header .navbar {
-    order: 1;
-    width: 40px;
+    order: 0;
+    height: 40px;
   }
 
   .navbar ul {
@@ -1288,7 +1399,7 @@ h2.title span {
     transform: rotate(180deg);
   }
   .header .accordion li .fa-chevron-down {
-    right: 12px;
+    right: 0;
     left: auto;
     font-size: 16px;
     position: absolute;
@@ -1306,6 +1417,14 @@ h2.title span {
   .header .accordion .dropdown.open .sub-menu {
     visibility: visible;
     opacity: 1;
+  }
+  .header-main .navbar.fixed-top {
+    position: unset;
+  }
+}
+@media screen and (max-width: 400px) {
+  .notification_wrap .notification_dropdown.active {
+    right: 5px !important;
   }
 }
 .navbar .navbar-toggler > span:last-child {
@@ -1623,7 +1742,7 @@ h2.title span {
   display: block;
   position: absolute;
   z-index: 9999;
-  width: 400px;
+  width: 330px;
   right: 233px;
   top: 105px;
   background: #000;
