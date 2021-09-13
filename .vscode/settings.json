@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
     "files.autoSave": "afterDelay",
-    "typescript.tsc.autoDetect": "off"
+    "typescript.tsc.autoDetect": "off",
+    "liveServer.settings.port": 5501
 }
